@@ -1,4 +1,180 @@
-<%- include('cabecera_inquilino')%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="stylesheets/inquilino.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <style>
+       .cuerpo {
+  background:  skyblue;
+}
+
+.container-fluid{
+  background-color: lightgray;
+  height: 40px;
+}
+
+.container-fluid h1{
+  text-align: left;
+  color: black;
+    padding-top: 20px;
+}
+
+.nav {
+  background-color: lightgray;
+  color: black;
+  justify-content: center;
+
+}
+
+.nav a {
+  color: black;
+}
+
+ p {
+  float: right;
+  margin-right: 30px;
+
+}
+
+.parrafos img {
+  width: 500px;
+  height: 200px;
+  border: 8px solid;
+  color: black;
+} 
+
+.footer {
+  margin-top: 50px;
+  background-color: lightgray;
+  padding: 160px;
+  
+}
+
+.footer ul {
+margin-top: 20px
+}
+
+
+.bloque {
+  margin-top: 50px;
+  margin-left: 500px;
+   height: 300px;
+   width: fit-content;
+}
+
+.bloque label {
+  margin-top: 10px;
+  color: black;
+}
+
+
+.bloque input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.bloque button {
+  border-radius: 20px;
+  border: 0;
+}
+
+.bloque a {
+  border-radius: 20px;
+  border: 0;
+}
+
+.opciones {
+  margin-top: 20px;
+  margin-left: 500px;
+   height: 300px;
+
+
+}
+
+.opciones a {
+  width: 100px;
+  border: 0;
+  border-radius: 20px;
+
+}
+
+ .opciones #cancelar {
+  padding: 8px;
+ }
+
+.opciones label {
+  margin-top: 10px;
+  color: black;
+}
+
+.opciones input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.opciones select {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.contenedorDeIncidencias  {
+  padding-top: 50px;
+  padding-left: 35%;
+
+}
+
+.contenedorDeIncidencias label {
+   padding-top: 10px;
+}
+
+.contenedorDeIncidencias input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+  height: 100px;
+  margin-top: 10px;
+
+}
+
+
+.contenedorDeIncidencias select {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 0
+}
+
+#validarInq {
+  margin-left: 10%;
+}
+
+    </style>
+
+  </head>
+  <body class="cuerpo">
+  <div class="container-fluid">
+    <h1>HostEst</h1>
+
+  </div>
+    <nav class="nav">
+       
+       <a class="btn btn-outline-secondary" href="/inquilino" title="Inicio"><i class="bi bi-door-open-fill"></i></a>
+       <a class="btn btn-outline-secondary" href="/buscarVivienda" title="Buscar Viviendas"><i class="bi bi-search"></i></a>
+       <a class="btn btn-outline-secondary" href="/historialInq" title="Historial"><i class="bi bi-journals"></i></a>
+       <a class="btn btn-outline-secondary" href="/incidenciasInq" title="Incidencias"><i class="bi bi-exclamation-triangle-fill"></i></a>
+       <a class="btn btn-outline-secondary" href="/perfilInq" title="Perfil"><i class="bi bi-person-lines-fill"></i></i></a>
+       <a class="btn btn-outline-secondary" href="/logout" title="Salir"><i class="bi bi-person-x-fill"></i></a>
+    </nav>
+
  <%  if (user) {%>
  <div class="bloque">
     <form  method="post" action="/modificarPerfilInq">
@@ -16,7 +192,7 @@
        <label for="contraseña"><strong>Tarjeta:</strong></label><br>
        <input type="text" id="tarjeta" name="tarjeta" value="<%= user.tarjeta %>"><br>
        <label for="contraseña"><strong>Contraseña:</strong></label><br>
-       <input type="password" id="password" name="password" value="<%= user.password %>"><br>
+       <input type="password" id="password" name="password"><br>
        <label for="user"><strong>Rol:</strong></label><br>
        <select id="rol" name="rol" value="<%= user.rol %>">
           <option value="inquilino">Inquilino</option>
@@ -27,4 +203,9 @@
     </form>
   </div>
  <% } %> 
-<%- include('foot')%>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

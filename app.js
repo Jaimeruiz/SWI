@@ -8,6 +8,7 @@ const connection = require('./routes/db');
 
 
 
+
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var registrateRouter = require('./routes/registrate');
@@ -156,6 +157,7 @@ function restricted(req, res, next){
     res.redirect('/login');
   }
 }
+
 
 
 module.exports = app;

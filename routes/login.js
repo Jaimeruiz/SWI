@@ -14,7 +14,7 @@ router.post('/', async function(req, res){
   password = req.body.password;
   let passwordHash = await bcryptjs.hash(password,8);
   connection.query('SELECT username,rol, password FROM users WHERE username = ?',[username], async function(err, results){
-  if (results[0].username = username){
+  if (results[0].username != 0 ){
     if (results[0].rol === 'inquilino') {
         if (await bcryptjs.compare(password, results[0].password)){
         req.session.user = results[0].username;
