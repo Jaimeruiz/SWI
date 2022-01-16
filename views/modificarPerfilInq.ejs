@@ -1,0 +1,30 @@
+<%- include('cabecera_inquilino')%>
+ <%  if (user) {%>
+ <div class="bloque">
+    <form  method="post" action="/modificarPerfilInq">
+       <input id ="id" name="id" value="<%= user.id %>" type="hidden">
+       <label for="user"><strong>Nombre:</strong></label><br>
+       <input type="text" id="nombre" name="nombre" value="<%= user.nombre %>"><br>
+       <label for="user"><strong>Apellidos:</strong></label><br>
+       <input type="text" id="apellidos" name="apellidos" value="<%= user.apellidos %>"><br>
+       <label for="user"><strong>Correo:</strong></label><br>
+       <input type="text" id="correo" name="correo" value="<%= user.correo %>"><br>
+       <label for="contraseña"><strong>Telefono:</strong></label><br>
+       <input type="tel" id="telefono" name="telefono" value="<%= user.telefono %>"><br>
+       <label for="contraseña"><strong>Usuario:</strong></label><br>
+       <input type="text" id="username" name="username" value="<%= user.username %>"><br>
+       <label for="contraseña"><strong>Tarjeta:</strong></label><br>
+       <input type="text" id="tarjeta" name="tarjeta" value="<%= user.tarjeta %>"><br>
+       <label for="contraseña"><strong>Contraseña:</strong></label><br>
+       <input type="password" id="password" name="password" value="<%= user.password %>"><br>
+       <label for="user"><strong>Rol:</strong></label><br>
+       <select id="rol" name="rol" value="<%= user.rol %>">
+          <option value="inquilino">Inquilino</option>
+          <option value="propietario">Propietario</option>
+       </select><br><br>
+       <button class="btn btn-dark" type="submit">Modificar</button>
+       <a class="btn btn-danger" id="cancelar" href="/perfilInq">Cancelar</a><br><br>
+    </form>
+  </div>
+ <% } %> 
+<%- include('foot')%>

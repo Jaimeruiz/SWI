@@ -1,0 +1,33 @@
+<%- include('cabecera_inquilino')%>
+<%- messages %>
+ <div class="container">
+      <table class="table table-bordered table-striped text-center mt-4">
+           <thead>
+              <tr class="bg-dark text-white">
+                  <th scope="column">ID</th>
+                  <th scope="column">Direccion</th>
+                  <th scope="column">Localidad</th>
+                  <th scope="column">Precio</th>
+                  <th scope="column">Habitaciones</th>
+                  <th scope="column">Propietario</th>
+                  <th scope="column">Acciones</th>
+              </tr> 
+           </thead>
+           <tbody> 
+              <% results.forEach((user)=> {%>
+              <tr>
+                  <td><%= user.id %></td>
+                  <td><%= user.direccion %></td>
+                  <td><%= user.localidad %></td>
+                  <td><%= user.precio %></td>
+                  <td><%= user.nInquilinos %></td>
+                  <td><%= user.propietario %></td>
+                  <td>
+                      <a href="/alquilarVivienda/<%= user.id %>" class="btn btn-primary">Alquilar</a>
+                  </td>
+              </tr>
+              <% }) %>
+           </tbody>
+      </table> 
+ </div>
+<%- include('foot')%>   

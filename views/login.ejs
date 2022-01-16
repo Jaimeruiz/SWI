@@ -1,0 +1,15 @@
+<%- include('cabecera_inicio')%>
+<%- messages %>
+ <div class="bloque">
+    <form class="log" id="login" method="post" action="/login">
+       <label for="user" form="login"><strong>Usuario:</strong></label><br>
+       <input type="text"  name="username"><br>
+       <label for="contraseña" form="login"><strong>Contraseña:</strong></label><br>
+       <input type="password"  name="password"><br><br>
+       <button class="btn btn-dark"  id="acceder" type="submit">Acceder</button>
+       <a class="btn btn-danger" id="cancelar" href="/">Cancelar</a><br><br>
+       <a class="btn btn-secondary" href="/inquilino" id="invitado">Seguir como invitado</a><br><br>
+       <a href="/registrate" id="redirigir">¿Aún no estás registrado?</a>
+    </form>
+  </div>
+<%- include('foot')%>

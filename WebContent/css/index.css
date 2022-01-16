@@ -1,0 +1,44 @@
+.cuerpo {
+	background:  url(../img/fondoIndex.jpg);
+}
+
+.container-fluid{
+	background-color: lightgray;
+	height: 50px;
+}
+
+.container-fluid h1{
+	text-align: left;
+	color: black;
+    padding-top: 20px;
+	text-align: left;
+}
+
+.nav {
+	background-color: lightgray;
+	color: black;
+	justify-content: center;
+
+}
+
+.nav a {
+	color: black;
+}
+
+.parrafos img {
+	width: 500px;
+	height: 200px;
+	border: 10px solid;
+	color: skyblue;
+} 
+
+.footer {
+	margin-top: 50px;
+	background-color: lightgray;
+	padding: 160px;
+	
+}
+
+.footer ul {
+margin-top: 20px
+}

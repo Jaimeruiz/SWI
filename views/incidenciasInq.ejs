@@ -1,0 +1,19 @@
+<%- include('cabecera_inquilino')%>
+<%- messages %>
+<div class="contenedorDeIncidencias">
+    <form class="incidencia" id="incidencia">
+      <label form="detalles" for="motivo"><strong>Elija el motivo:</strong></label><br>
+      <select id="precio">
+         <option id="a">Cancelar una reserva</option>
+         <option id="b">Problemas con un compañero</option>
+         <option id="c">Problemas con el propietario</option>
+         <option id="d">Problemas al efectuar el pago</option>
+         <option id="e">Problemas al efectuar el pago</option>
+         <option id="f">Otro motivo</option>
+       </select><br>
+       <label for="descripcion" form="incidencia"><strong>Descripción:</strong></label><br>
+       <input type="text" id="descripcion"><br><br>
+       <button class="btn btn-dark"  id="validarInq" type="submit" onclick="enviarIncidencias()">Enviar</button>
+    </form>
+  </div>
+    <%- include('foot')%>

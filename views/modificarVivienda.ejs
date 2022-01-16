@@ -1,0 +1,27 @@
+<%- include('cabecera_propietario')%>
+ <%  if (user) {%>
+ <div class="bloque">
+    <form  method="post" action="/modificarVivienda">
+       <input id ="id" name="id" value="<%= user.id %>" type="hidden">
+       <label for="user"><strong>Dirección:</strong></label><br>
+       <input type="text" id="direccion" name="direccion" value="<%= user.direccion %>"><br>
+       <label for="user"><strong>Localidad:</strong></label><br>
+       <input type="text" id="localidad" name="localidad" value="<%= user.localidad %>"><br>
+       <label for="user"><strong>Precio:</strong></label><br>
+       <input type="number" id="precio" name="precio" value="<%= user.precio %>"><br>
+       <label for="contraseña"><strong>Propietario:</strong></label><br>
+       <input type="text" id="propietario" name="propietario" value="<%= user.propietario %>"><br>
+       <label for="user"><strong>Numero de Inquilinos:</strong></label><br>
+       <select id="nInquilinos" name="nInquilinos" value="<%= user.nInquilinos %>">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 o más</option>
+       </select><br><br>
+       <button class="btn btn-dark" type="submit">Modificar</button>
+       <a class="btn btn-danger" id="cancelar" href="/misViviendas">Cancelar</a><br><br>
+    </form>
+  </div>
+ <% } %> 
+<%- include('foot')%>

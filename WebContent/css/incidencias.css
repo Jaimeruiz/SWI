@@ -1,0 +1,53 @@
+.cuerpo {
+	background: url(../img/fondoRegistro.jpeg);
+}
+
+.container-fluid{
+	background-color: lightgray;
+	height: 50px;
+}
+
+.container-fluid h1{
+	text-align: left;
+	color: black;
+    padding-top: 20px;
+	text-align: left;
+}
+
+.nav {
+	background-color: lightgray;
+	color: black;
+	justify-content: center;
+
+}
+
+.nav a {
+	color: black;
+}
+
+
+.contenedorDeIncidencias {
+	margin-top: 50px;
+	margin-left: 500px;
+   height: 300px;
+   width: fit-content;
+   
+
+}
+
+.contenedorDeIncidencias label {
+	margin-top: 10px;
+	color: black;
+}
+
+
+.contenedorDeIncidencias input {
+	width: 300px;
+	height: 100px;
+}
+
+.contenedorDeIncidencias button {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 70px;
+}

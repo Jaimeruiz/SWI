@@ -1,0 +1,143 @@
+
+.cuerpo {
+  background:  skyblue;
+}
+
+.container-fluid{
+  background-color: lightgray;
+  height: 40px;
+  
+}
+
+.container-fluid h1{
+  text-align: left;
+  color: black;
+    padding-top: 20px;
+}
+
+.nav {
+  background-color: lightgray;
+  color: black;
+  justify-content: center;
+
+}
+
+.nav a {
+  color: black;
+}
+
+.parrafos img {
+  width: 500px;
+  height: 200px;
+  border: 8px solid;
+  color: black;
+} 
+
+.footer {
+  margin-top: 50px;
+  background-color: lightgray;
+  padding: 160px;
+  
+}
+
+.footer ul {
+margin-top: 20px
+}
+
+
+.bloque {
+  margin-top: 50px;
+  margin-left: 500px;
+   height: 300px;
+   width: fit-content;
+}
+
+.bloque label {
+  margin-top: 10px;
+  color: black;
+}
+
+
+.bloque input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.bloque button {
+  border-radius: 20px;
+  border: 0;
+}
+
+.bloque a {
+  border-radius: 20px;
+  border: 0;
+}
+
+#redirigir {
+  color: black;
+}
+
+.opciones {
+  margin-top: 20px;
+  margin-left: 500px;
+   height: 300px;
+
+
+}
+
+.opciones a {
+  width: 100px;
+  border: 0;
+  border-radius: 20px;
+  
+}
+
+
+.opciones label {
+  margin-top: 10px;
+  color: black;
+}
+
+.opciones input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.opciones select {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.container-xxl {
+  background-color: lightgray;
+  height: 200px;
+  margin-top: 320px;
+}
+
+.container-xxl div {
+  margin-top: 50px;
+}
+
+.container-xxl div .izq {
+  float: left; 
+  margin-left: 50px; 
+
+}
+
+.container-xxl div .centro {
+  float: left; 
+  margin-left: 23%;
+}
+
+.container-xxl div .drch {
+  float: right; 
+  margin-right: 50px;
+}
+
+
+
+
+

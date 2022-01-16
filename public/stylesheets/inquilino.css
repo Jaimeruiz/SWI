@@ -1,0 +1,176 @@
+.cuerpo {
+  background:  skyblue;
+}
+
+.container-fluid{
+  background-color: lightgray;
+  height: 40px;
+}
+
+.container-fluid h1{
+  text-align: left;
+  color: black;
+    padding-top: 20px;
+}
+
+.nav {
+  background-color: lightgray;
+  color: black;
+  justify-content: center;
+
+}
+
+.nav a {
+  color: black;
+}
+
+ p {
+  float: right;
+  margin-right: 30px;
+
+}
+
+.parrafos img {
+  width: 500px;
+  height: 200px;
+  border: 8px solid;
+  color: black;
+} 
+
+.footer {
+  margin-top: 50px;
+  background-color: lightgray;
+  padding: 160px;
+  
+}
+
+.footer ul {
+margin-top: 20px
+}
+
+
+.bloque {
+  margin-top: 50px;
+  margin-left: 500px;
+   height: 300px;
+   width: fit-content;
+}
+
+.bloque label {
+  margin-top: 10px;
+  color: black;
+}
+
+
+.bloque input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.bloque button {
+  border-radius: 20px;
+  border: 0;
+}
+
+.bloque a {
+  border-radius: 20px;
+  border: 0;
+}
+
+.opciones {
+  margin-top: 20px;
+  margin-left: 500px;
+   height: 300px;
+
+
+}
+
+.opciones a {
+  width: 100px;
+  border: 0;
+  border-radius: 20px;
+
+}
+
+ .opciones #cancelar {
+  padding: 8px;
+ }
+
+.opciones label {
+  margin-top: 10px;
+  color: black;
+}
+
+.opciones input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.opciones select {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.contenedorDeIncidencias  {
+  padding-top: 50px;
+  padding-left: 35%;
+
+}
+
+.contenedorDeIncidencias label {
+   padding-top: 10px;
+}
+
+.contenedorDeIncidencias input {
+  width: 250px;
+  border-radius: 20px;
+  border: 0;
+  height: 100px;
+  margin-top: 10px;
+
+}
+
+
+.contenedorDeIncidencias select {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 0
+}
+
+#validarInq {
+  margin-left: 10%;
+}
+
+.container-xxl {
+  background-color: lightgray;
+  height: 200px;
+  margin-top: 320px;
+}
+
+.container-xxl div {
+  margin-top: 50px;
+}
+
+.container-xxl div .izq {
+  float: left; 
+  margin-left: 50px; 
+
+}
+
+.container-xxl div .centro {
+  float: left; 
+  margin-left: 23%;
+}
+
+.container-xxl div .drch {
+  float: right; 
+  margin-right: 50px;
+}
+
+
+
+
+

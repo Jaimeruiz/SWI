@@ -1,0 +1,57 @@
+.cuerpo {
+	background: url(../img/fondoIndex.jpg);
+}
+
+.container-fluid{
+	background-color: lightgray;
+	height: 50px;
+}
+
+.container-fluid h1{
+	text-align: left;
+	color: black;
+    padding-top: 20px;
+	text-align: left;
+}
+
+.nav {
+	background-color: lightgray;
+	color: black;
+	justify-content: center;
+
+}
+
+.nav a {
+	color: black;
+}
+
+
+.viviendas {
+	margin-top: 200px;
+	float: left;
+   
+
+}
+
+
+.viviendas a {
+	height: 100px;
+	width: 120px;
+	margin-left: 300px;
+}
+
+
+.solicitud {
+	margin-top: 200px;
+	float: right;
+   
+
+}
+
+
+.solicitud a {
+	text-align: center;
+	height: 100px;
+	width: 120px;
+	margin-right: 300px;
+}

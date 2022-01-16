@@ -1,0 +1,30 @@
+<%- include('cabecera_inicio')%>
+<%- messages %>
+<div class="opciones">
+    <form class="Inq"  action="/registrate" method="post">
+       <label for="nombre" ><strong>Nombre:</strong></label><br>
+       <input type="text" id="nombre" name="nombre" ><br>
+       <label for="apellidos" ><strong>Apellidos:</strong></label><br>
+       <input type="text" id="apellidos" name="apellidos" ><br>
+       <label for="correo" ><strong>Email:</strong></label><br>
+       <input type="text" id="correo" name="correo" pattern="^[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,4}$"><br>
+       <label for="telefono" ><strong>Telefono:</strong></label><br>
+       <input type="tel" id="telefono" name="telefono" pattern="^[6-7]{1}[0-9]{8}"><br>
+       <label for="username" ><strong>Usuario:</strong></label><br>
+       <input type="text" id="username" name="username"><br>
+       <label for="tarjeta" ><strong>Tarjeta de crédito:</strong><br>
+       <input type="text" id="tarjeta" name="tarjeta" pattern="[0-9]{16}"><br>
+       <label for="password"><strong>Contraseña:</strong></label><br>
+       <input type="password" id="password" name="password"><br>
+       <label for="passwd2" ><strong>Repetir contraseña:</strong></label><br>
+       <input type="password" id="passwd2" name="passwd2"><br>
+       <label for="rol" ><strong>Rol:</strong></label><br>
+       <select id="rol" name="rol">
+         <option value="inquilino">Inquilino</option>
+         <option value="propietario">Propietario</option>
+       </select><br><br>
+       <button class="btn btn-dark"  id="registrar" type="submit" >Registrar</button>
+       <a class="btn btn-danger" id="cancelar" href="/" >Cancelar</a>
+   </form>
+</div>
+<%- include('foot')%>

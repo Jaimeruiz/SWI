@@ -1,0 +1,40 @@
+<%- include('cabecera_propietario')%>
+<%- messages %>
+ <div class="container">
+      <table class="table table-bordered table-striped text-center mt-4">
+           <thead>
+              <tr class="bg-dark text-white">
+                  <th scope="column">ID</th>
+                  <th scope="column">Nombre</th>
+                  <th scope="column">Apellidos</th>
+                  <th scope="column">Correo</th>
+                  <th scope="column">Telefono</th>
+                  <th scope="column">Usuario</th>
+                  <th scope="column">Tarjeta</th>
+                  <th scope="column">Contraseña</th>
+                  <th scope="column">Rol</th>
+                  <th scope="column">Acciones</th>
+              </tr> 
+           </thead>
+           <tbody> 
+              <% results.forEach((user)=> {%>
+              <tr>
+                  <td><%= user.id %></td>
+                  <td><%= user.nombre %></td>
+                  <td><%= user.apellidos %></td>
+                  <td><%= user.correo %></td>
+                  <td><%= user.telefono %></td>
+                  <td><%= user.username %></td>
+                  <td><%= user.tarjeta %></td>
+                  <td><%= user.password %></td>
+                  <td><%= user.rol %></td>
+                  <td>
+                      <a href="/modificarPerfilProp/<%= user.id %>" class="btn btn-primary">Editar</a>
+                      <a href="/borrarPerfilProp/<%= user.id %>" class="btn btn-danger">Eliminar</a>
+                  </td>
+              </tr>
+              <% }) %>
+           </tbody>
+      </table> 
+ </div>
+<%- include('foot')%>   
